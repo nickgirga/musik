@@ -17,7 +17,6 @@
 
 from gi.repository import Gtk
 
-
 @Gtk.Template(resource_path='/com/github/nickgirga/musik/window.ui')
 class MusikWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MusikWindow'

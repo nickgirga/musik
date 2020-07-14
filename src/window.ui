@@ -159,30 +159,14 @@
   </object>
   <template class="MusikWindow" parent="GtkApplicationWindow">
     <property name="can_focus">False</property>
-    <property name="default_width">600</property>
-    <property name="default_height">300</property>
+    <property name="default_width">800</property>
+    <property name="default_height">400</property>
     <property name="icon_name">audio-x-generic</property>
     <child>
       <object class="GtkBox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
-        <child>
-          <object class="GtkStackSwitcher" id="page_selector">
-            <property name="name">page_selector</property>
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="halign">center</property>
-            <property name="homogeneous">True</property>
-            <property name="stack">stack1</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="pack_type">end</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
         <child>
           <object class="GtkStack" id="stack1">
             <property name="visible">True</property>
@@ -193,22 +177,22 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Page0</property>
+                <property name="label" translatable="yes">Playlist placeholder</property>
               </object>
               <packing>
-                <property name="name">page0</property>
-                <property name="title" translatable="yes">page0</property>
+                <property name="name">playlist_tab</property>
+                <property name="title" translatable="yes">Playlist</property>
               </packing>
             </child>
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Page1</property>
+                <property name="label" translatable="yes">Drum Pad placeholder</property>
               </object>
               <packing>
-                <property name="name">page1</property>
-                <property name="title" translatable="yes">page1</property>
+                <property name="name">drum_pad_tab</property>
+                <property name="title" translatable="yes">Drum Pad</property>
                 <property name="position">1</property>
               </packing>
             </child>
@@ -216,11 +200,11 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Page2</property>
+                <property name="label" translatable="yes">Piano Roll placeholder</property>
               </object>
               <packing>
-                <property name="name">page2</property>
-                <property name="title" translatable="yes">page2</property>
+                <property name="name">piano_roll_tab</property>
+                <property name="title" translatable="yes">Piano Roll</property>
                 <property name="position">2</property>
               </packing>
             </child>
@@ -228,17 +212,32 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Page3</property>
+                <property name="label" translatable="yes">Sampler placeholder</property>
               </object>
               <packing>
-                <property name="name">page3</property>
-                <property name="title" translatable="yes">page3</property>
+                <property name="name">sample_tab</property>
+                <property name="title" translatable="yes">Sample</property>
                 <property name="position">3</property>
               </packing>
             </child>
           </object>
           <packing>
             <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStackSwitcher">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">center</property>
+            <property name="hexpand">True</property>
+            <property name="homogeneous">True</property>
+            <property name="stack">stack1</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">1</property>
           </packing>
@@ -250,8 +249,21 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="title">Musik</property>
-        <property name="subtitle" translatable="yes">Music Sequencer</property>
+        <property name="subtitle">Music Sequencer</property>
         <property name="show_close_button">True</property>
+        <child>
+          <object class="GtkToggleButton" id="rec_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">rec_icon</property>
+            <property name="always_show_image">True</property>
+            <signal name="toggled" handler="rec_button_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
         <child>
           <object class="GtkButton" id="more_button">
             <property name="visible">True</property>
@@ -264,19 +276,7 @@
           </object>
           <packing>
             <property name="pack_type">end</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkToggleButton" id="rec_button">
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="image">rec_icon</property>
-            <property name="always_show_image">True</property>
-            <signal name="toggled" handler="rec_button_toggled" swapped="no"/>
-          </object>
-          <packing>
-            <property name="position">1</property>
+            <property name="position">2</property>
           </packing>
         </child>
         <child>
