@@ -1,22 +1,22 @@
-Build started at 2020-07-13T23:37:19.184568
+Build started at 2020-07-13T23:44:27.544005
 Main binary: /usr/bin/python
 Build Options: 
 Python system: Linux
 The Meson build system
-Version: 0.54.3
-Source dir: /home/manjaro/Projects/musik
-Build dir: /home/manjaro/Projects/musik/_build
+Version: 0.54.2
+Source dir: /home/nick/Projects/Musik
+Build dir: /home/nick/Projects/Musik/_build
 Build type: native build
 None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
 None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
 Project name: musik
 Project version: 0.1.0
-Build machine cpu family: aarch64
-Build machine cpu: aarch64
-Host machine cpu family: aarch64
-Host machine cpu: aarch64
-Target machine cpu family: aarch64
-Target machine cpu: aarch64
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
 Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
 Adding test "Validate desktop file"
 Program appstream-util found: YES (/usr/bin/appstream-util)
@@ -32,7 +32,7 @@ Found pkg-config: /usr/bin/pkg-config (1.7.3)
 Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
 PKG_CONFIG_PATH: 
 Called `/usr/bin/pkg-config --modversion glib-2.0` -> 0
-2.64.4
+2.64.3
 PKG_CONFIG_PATH: 
 Called `/usr/bin/pkg-config --cflags glib-2.0` -> 0
 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
@@ -45,7 +45,7 @@ Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
 None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
 Program python3 found: YES (/usr/bin/python3)
 Configuring musik using configuration
-Program build-aux/meson/postinstall.py found: YES (/home/manjaro/Projects/musik/build-aux/meson/postinstall.py)
+Program build-aux/meson/postinstall.py found: YES (/home/nick/Projects/Musik/build-aux/meson/postinstall.py)
 Build targets in project: 6
 
 Found ninja-1.10.0 at /usr/bin/ninja
