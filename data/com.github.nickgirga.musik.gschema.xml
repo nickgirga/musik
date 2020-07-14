@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="musik">
+	<schema id="com.github.nickgirga.musik" path="/com/github/nickgirga/musik/">
+	</schema>
+</schemalist>

@@ -1,0 +1,7 @@
+data/com.github.nickgirga.musik.desktop.in
+data/com.github.nickgirga.musik.appdata.xml.in
+data/com.github.nickgirga.musik.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+
