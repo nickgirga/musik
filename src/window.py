@@ -27,9 +27,8 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def about_button_clicked(self, widget):
-        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "About page is currently under development. All work is currently done by Nick Girga. Git repo is available at http://github.com/nickgirga/musik.git")
-        message.run()
-        message.destroy()
+        widget.run()
+        widget.destroy()
 
     @Gtk.Template.Callback()
     def preferences_button_clicked(self, widget):
