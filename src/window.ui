@@ -173,6 +173,7 @@
             <property name="can_focus">False</property>
             <property name="transition_duration">500</property>
             <property name="transition_type">slide-left-right</property>
+            <property name="interpolate_size">True</property>
             <child>
               <object class="GtkLabel">
                 <property name="visible">True</property>
@@ -188,11 +189,11 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Drum Pad placeholder</property>
+                <property name="label" translatable="yes">Pad placeholder</property>
               </object>
               <packing>
-                <property name="name">drum_pad_tab</property>
-                <property name="title" translatable="yes">Drum Pad</property>
+                <property name="name">pad_tab</property>
+                <property name="title" translatable="yes">Pad</property>
                 <property name="position">1</property>
               </packing>
             </child>
@@ -200,11 +201,11 @@
               <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="label" translatable="yes">Piano Roll placeholder</property>
+                <property name="label" translatable="yes">Pad placeholder</property>
               </object>
               <packing>
-                <property name="name">piano_roll_tab</property>
-                <property name="title" translatable="yes">Piano Roll</property>
+                <property name="name">piano_tab</property>
+                <property name="title" translatable="yes">Piano</property>
                 <property name="position">2</property>
               </packing>
             </child>
