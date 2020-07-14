@@ -43,7 +43,7 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def project_preferences_button_clicked(self, widget):
-        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "Project settings are still under development.")
+        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsTypex.OK, "Project settings are still under development.")
         message.run()
         message.destroy()
 
