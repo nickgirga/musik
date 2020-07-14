@@ -8,5 +8,3 @@
 /usr/local/share/musik/musik/__init__.py
 /usr/local/share/musik/musik/main.py
 /usr/local/share/musik/musik/window.py
-/usr/local/share/musik/musik
-/usr/local/share/musik

@@ -1,11 +1,11 @@
-Build started at 2020-07-13T23:44:27.544005
+Build started at 2020-07-14T13:01:43.250482
 Main binary: /usr/bin/python
 Build Options: 
 Python system: Linux
 The Meson build system
 Version: 0.54.2
-Source dir: /home/nick/Projects/Musik
-Build dir: /home/nick/Projects/Musik/_build
+Source dir: /home/nick/Projects/musik
+Build dir: /home/nick/Projects/musik/_build
 Build type: native build
 None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
 None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
@@ -45,7 +45,7 @@ Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
 None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
 Program python3 found: YES (/usr/bin/python3)
 Configuring musik using configuration
-Program build-aux/meson/postinstall.py found: YES (/home/nick/Projects/Musik/build-aux/meson/postinstall.py)
+Program build-aux/meson/postinstall.py found: YES (/home/nick/Projects/musik/build-aux/meson/postinstall.py)
 Build targets in project: 6
 
 Found ninja-1.10.0 at /usr/bin/ninja

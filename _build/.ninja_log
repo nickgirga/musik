@@ -3,3 +3,6 @@
 1	1857	1594708698259216229	data/com.github.nickgirga.musik.desktop	42c9a9b2e682d2e1
 1	1860	1594708698263216257	data/com.github.nickgirga.musik.appdata.xml	22b39ecb9b508001
 0	20	1594709070872966681	src/musik.gresource	1d0befa116e517d5
+1	1703	1594756875138971085	data/com.github.nickgirga.musik.appdata.xml	22b39ecb9b508001
+0	1703	1594756875138971085	data/com.github.nickgirga.musik.desktop	42c9a9b2e682d2e1
+1	1723	1594756875162302246	src/musik.gresource	1d0befa116e517d5
