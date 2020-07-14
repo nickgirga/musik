@@ -45,10 +45,10 @@
       <placeholder/>
     </child>
   </object>
-  <object class="GtkImage" id="about_icon">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-about</property>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="upper">999</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
   </object>
   <object class="GtkImage" id="play_icon">
     <property name="visible">True</property>
@@ -60,10 +60,102 @@
     <property name="can_focus">False</property>
     <property name="stock">gtk-preferences</property>
   </object>
-  <object class="GtkImage" id="record_icon">
+  <object class="GtkPopover" id="preferences_popover">
+    <property name="can_focus">False</property>
+    <property name="relative_to">preferences_icon</property>
+    <property name="modal">False</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkModelButton" id="new_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="text" translatable="yes">New Project</property>
+            <signal name="clicked" handler="feature_not_implemented" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="open_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="text" translatable="yes">Open Project</property>
+            <signal name="clicked" handler="feature_not_implemented" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="project_settings_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="text" translatable="yes">Project Settings</property>
+            <signal name="clicked" handler="project_preferences_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="preferences_butto">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="text" translatable="yes">Preferences</property>
+            <signal name="clicked" handler="preferences_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="about_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="text" translatable="yes">About</property>
+            <signal name="clicked" handler="about_button_clicked" object="AboutWindow" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkImage" id="rec_icon">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-media-record</property>
+  </object>
+  <object class="GtkImage" id="redo_icon">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-redo</property>
+  </object>
+  <object class="GtkImage" id="undo_icon">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-undo</property>
   </object>
   <template class="MusikWindow" parent="GtkApplicationWindow">
     <property name="can_focus">False</property>
@@ -94,57 +186,84 @@
         <property name="subtitle" translatable="yes">Music Sequencer</property>
         <property name="show_close_button">True</property>
         <child>
-          <object class="GtkButton" id="preferences_button">
+          <object class="GtkButton" id="more_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
             <property name="image">preferences_icon</property>
             <property name="image_position">top</property>
             <property name="always_show_image">True</property>
-            <signal name="clicked" handler="preferences_button_clicked" swapped="no"/>
+            <signal name="clicked" handler="more_button_clicked" object="preferences_popover" swapped="no"/>
           </object>
           <packing>
             <property name="pack_type">end</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="about_button">
+          <object class="GtkToggleButton" id="rec_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
-            <property name="image">about_icon</property>
-            <property name="image_position">top</property>
+            <property name="image">rec_icon</property>
             <property name="always_show_image">True</property>
-            <signal name="clicked" handler="about_button_clicked" object="AboutWindow" swapped="no"/>
+            <signal name="toggled" handler="rec_button_toggled" swapped="no"/>
           </object>
           <packing>
-            <property name="pack_type">end</property>
             <property name="position">1</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="toggle_playback">
+          <object class="GtkToggleButton" id="playback_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
             <property name="image">play_icon</property>
-            <signal name="clicked" handler="toggle_playback_button_clicked" swapped="no"/>
+            <property name="always_show_image">True</property>
+            <signal name="toggled" handler="playback_button_toggled" swapped="no"/>
           </object>
           <packing>
             <property name="position">2</property>
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="toggle_rec">
+          <object class="GtkBox">
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="image">record_icon</property>
-            <property name="image_position">top</property>
-            <property name="always_show_image">True</property>
-            <signal name="clicked" handler="rec_button_clicked" swapped="no"/>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="undo_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="image">undo_icon</property>
+                <property name="relief">none</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="feature_not_implemented" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="redo_button">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="image">redo_icon</property>
+                <property name="relief">none</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="feature_not_implemented" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
           </object>
           <packing>
+            <property name="pack_type">end</property>
             <property name="position">3</property>
           </packing>
         </child>
