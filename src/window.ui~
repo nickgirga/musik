@@ -45,15 +45,20 @@
       <placeholder/>
     </child>
   </object>
-  <object class="GtkImage" id="about">
+  <object class="GtkImage" id="about_icon">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-about</property>
   </object>
-  <object class="GtkImage" id="preferences">
+  <object class="GtkImage" id="preferences_icon">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-preferences</property>
+  </object>
+  <object class="GtkImage" id="record_icon">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-media-record</property>
   </object>
   <template class="MusikWindow" parent="GtkApplicationWindow">
     <property name="can_focus">False</property>
@@ -84,29 +89,58 @@
         <property name="subtitle" translatable="yes">Music Sequencer</property>
         <property name="show_close_button">True</property>
         <child>
-          <object class="GtkButton" id="aboutButton">
+          <object class="GtkButton" id="preferences_button">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
-            <property name="image">about</property>
-            <property name="image_position">top</property>
-            <property name="always_show_image">True</property>
-            <signal name="clicked" handler="about_button_clicked" object="AboutWindow" swapped="no"/>
-          </object>
-        </child>
-        <child>
-          <object class="GtkButton" id="preferencesButton">
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="image">preferences</property>
+            <property name="image">preferences_icon</property>
             <property name="image_position">top</property>
             <property name="always_show_image">True</property>
             <signal name="clicked" handler="preferences_button_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="pack_type">end</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="about_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">about_icon</property>
+            <property name="image_position">top</property>
+            <property name="always_show_image">True</property>
+            <signal name="clicked" handler="about_button_clicked" object="AboutWindow" swapped="no"/>
+          </object>
+          <packing>
+            <property name="pack_type">end</property>
             <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="toggle_playback">
+            <property name="label" translatable="yes">play</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="toggle_playback_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="toggle_rec">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">record_icon</property>
+            <property name="image_position">top</property>
+            <property name="always_show_image">True</property>
+            <signal name="clicked" handler="rec_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="position">3</property>
           </packing>
         </child>
       </object>

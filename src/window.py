@@ -35,3 +35,15 @@ class MusikWindow(Gtk.ApplicationWindow):
         message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "Preferences page is currently under development.")
         message.run()
         message.destroy()
+
+    @Gtk.Template.Callback()
+    def toggle_playback_button_clicked(self, widget):
+        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "There is no playlist to resume. This is under development.")
+        message.run()
+        message.destroy()
+
+    @Gtk.Template.Callback()
+    def rec_button_clicked(self, widget):
+        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "There is no playlist to record on. This is under development.")
+        message.run()
+        message.destroy()
