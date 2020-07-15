@@ -25,38 +25,14 @@ class MusikWindow(Gtk.ApplicationWindow):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
-    def more_button_clicked(self, widget):
-        widget.show_all()
-        widget.popup()
+    def popup_button_clicked(self, popup):
+        popup.show_all()
+        popup.popup()
 
     @Gtk.Template.Callback()
-    def about_button_clicked(self, widget):
+    def window_button_clicked(self, widget):
         widget.run()
         widget.destroy()
-
-    @Gtk.Template.Callback()
-    def preferences_button_clicked(self, widget):
-        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "Preferences are still under development.")
-        message.run()
-        message.destroy()
-
-    @Gtk.Template.Callback()
-    def project_preferences_button_clicked(self, widget):
-        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsTypex.OK, "Project settings are still under development.")
-        message.run()
-        message.destroy()
-
-    @Gtk.Template.Callback()
-    def playback_button_toggled(self, widget):
-        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "There is no playlist to resume. This is under development.")
-        message.run()
-        message.destroy()
-
-    @Gtk.Template.Callback()
-    def rec_button_toggled(self, widget):
-        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "There is no playlist to record on. This is under development.")
-        message.run()
-        message.destroy()
 
     @Gtk.Template.Callback()
     def feature_not_implemented(self, widget):
