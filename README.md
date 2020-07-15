@@ -13,6 +13,7 @@ This is meant for simply having fun and jamming out on a mobile Linux device. It
 - Run `cd musik/` to enter the project's root directory.
   - Here you can start making changes and interacting with the git repository (like committing changes, etc).
 - I've just added a small installer script to simplify reconfiguring and installing Musik using meson. Simply call `./install.sh` in the root directory and enter your password when it pops up.
+  - It is likely you will see a "command not found: scale-to-fit" error. This is only for mobile devices and can safely be ignored.
 - Now you should be able to launch it via a "musik" icon in you app launcher (a desktop file is left in /usr/share/applications) or you can use the command `musik`.
 - Have fun!
 
