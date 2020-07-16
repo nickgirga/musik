@@ -366,6 +366,12 @@ audio-volume-medium-symbolic</property>
                   <object class="GtkGrid">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="margin_start">2</property>
+                    <property name="margin_end">2</property>
+                    <property name="margin_top">2</property>
+                    <property name="margin_bottom">2</property>
+                    <property name="row_spacing">2</property>
+                    <property name="column_spacing">2</property>
                     <property name="row_homogeneous">True</property>
                     <property name="column_homogeneous">True</property>
                     <child>
@@ -373,6 +379,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -387,6 +394,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -401,6 +409,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -415,6 +424,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -429,6 +439,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -443,6 +454,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -457,6 +469,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -471,6 +484,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -485,6 +499,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -499,6 +514,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -513,6 +529,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -527,6 +544,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -541,6 +559,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -555,6 +574,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
@@ -569,6 +589,7 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="relief">half</property>
                         <child>
                           <placeholder/>
                         </child>
