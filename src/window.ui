@@ -190,6 +190,11 @@
     <property name="can_focus">False</property>
     <property name="stock">gtk-redo</property>
   </object>
+  <object class="GtkAdjustment" id="song_progression">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
   <object class="GtkImage" id="undo_icon">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
@@ -631,18 +636,18 @@ audio-volume-medium-symbolic</property>
                 <property name="can_focus">True</property>
                 <property name="shadow_type">in</property>
                 <child>
-                  <object class="GtkViewport">
+                  <object class="GtkViewport" id="piano_roll_viewport">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkBox" id="piano_roll">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="orientation">vertical</property>
                         <property name="spacing">2</property>
                         <property name="homogeneous">True</property>
                         <child>
-                          <object class="GtkBox">
+                          <object class="GtkBox" id="O5">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="orientation">vertical</property>
@@ -666,13 +671,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -702,13 +707,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -738,13 +743,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -774,13 +779,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -810,13 +815,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -846,13 +851,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -882,13 +887,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -918,13 +923,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -954,13 +959,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -990,13 +995,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1026,13 +1031,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1062,13 +1067,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1088,7 +1093,7 @@ audio-volume-medium-symbolic</property>
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkBox">
+                          <object class="GtkBox" id="O4">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="orientation">vertical</property>
@@ -1112,13 +1117,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1148,13 +1153,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1184,13 +1189,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1220,13 +1225,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1256,13 +1261,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1292,13 +1297,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1328,13 +1333,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1364,13 +1369,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1400,13 +1405,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1436,13 +1441,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1472,13 +1477,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1508,13 +1513,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1534,7 +1539,7 @@ audio-volume-medium-symbolic</property>
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkBox">
+                          <object class="GtkBox" id="O3">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="orientation">vertical</property>
@@ -1558,13 +1563,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1594,13 +1599,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1630,13 +1635,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1666,13 +1671,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1702,13 +1707,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1738,13 +1743,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1774,13 +1779,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1810,13 +1815,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1846,13 +1851,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1882,13 +1887,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1918,13 +1923,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -1954,13 +1959,13 @@ audio-volume-medium-symbolic</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkLayout">
+                                  <object class="GtkLevelBar">
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="hexpand">True</property>
                                   </object>
                                   <packing>
-                                    <property name="expand">True</property>
+                                    <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
                                   </packing>
@@ -2122,6 +2127,22 @@ audio-volume-medium-symbolic</property>
           <packing>
             <property name="pack_type">end</property>
             <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScale" id="time_scrubber">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="adjustment">song_progression</property>
+            <property name="round_digits">1</property>
+            <property name="digits">0</property>
+            <property name="draw_value">False</property>
+            <property name="has_origin">False</property>
+            <property name="value_pos">right</property>
+          </object>
+          <packing>
+            <property name="position">4</property>
           </packing>
         </child>
       </object>
