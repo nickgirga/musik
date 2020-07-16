@@ -203,8 +203,8 @@
   </object>
   <template class="MusikWindow" parent="GtkApplicationWindow">
     <property name="can_focus">False</property>
-    <property name="default_width">800</property>
-    <property name="default_height">400</property>
+    <property name="default_width">1440</property>
+    <property name="default_height">450</property>
     <property name="icon_name">audio-x-generic</property>
     <child>
       <object class="GtkBox">

@@ -203,8 +203,8 @@
   </object>
   <template class="MusikWindow" parent="GtkApplicationWindow">
     <property name="can_focus">False</property>
-    <property name="default_width">800</property>
-    <property name="default_height">400</property>
+    <property name="default_width">1440</property>
+    <property name="default_height">540</property>
     <property name="icon_name">audio-x-generic</property>
     <child>
       <object class="GtkBox">
@@ -639,11 +639,15 @@ audio-volume-medium-symbolic</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="orientation">vertical</property>
+                        <property name="spacing">2</property>
+                        <property name="homogeneous">True</property>
                         <child>
                           <object class="GtkBox">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="orientation">vertical</property>
+                            <property name="spacing">2</property>
+                            <property name="homogeneous">True</property>
                             <child>
                               <object class="GtkBox">
                                 <property name="visible">True</property>
@@ -1088,6 +1092,8 @@ audio-volume-medium-symbolic</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="orientation">vertical</property>
+                            <property name="spacing">2</property>
+                            <property name="homogeneous">True</property>
                             <child>
                               <object class="GtkBox">
                                 <property name="visible">True</property>
@@ -1532,6 +1538,8 @@ audio-volume-medium-symbolic</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="orientation">vertical</property>
+                            <property name="spacing">2</property>
+                            <property name="homogeneous">True</property>
                             <child>
                               <object class="GtkBox">
                                 <property name="visible">True</property>
