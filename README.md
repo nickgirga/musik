@@ -17,3 +17,6 @@ This is meant for simply having fun and jamming out on a mobile Linux device. It
 - Have fun!
 
 Note: Systems with multiple Python versions may run into "gi module not found" errors if the environment being used is missing python3-gi/pygobject. If you run into these errors, ensure they are installed and that the shebang of "/usr/local/bin/musik" points to the appropriate version of Python. Most users' should read `#!/usr/bin/python`. To edit the shebang, simply open "/usr/local/bin/musik" in a text editor of your choice and edit the very first line.
+
+### There's still lots of work to do!
+This is still a very barebones project. Basically nothing really does anything besides buttons that interact with other UI elements at the moment. But the beauty of open source software is that anybody can contribute. If you're interested in helping make awesome, free tools that are accessible to musicians everywhere, please fork my project, check the [issues](https://github.com/nickgirga/musik/issues) page, check the [project](https://github.com/nickgirga/musik/projects/1) page and see if there's anything you can help with. Even doing something as simple as opening a known bug under the [issues](https://github.com/nickgirga/musik/issues) page will help us track all of the work that needs to be done. All contributions are appreciated.
