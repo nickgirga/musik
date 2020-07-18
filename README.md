@@ -17,7 +17,3 @@ This is meant for simply having fun and jamming out on a mobile Linux device. It
 - Have fun!
 
 Note: Systems with multiple Python versions may run into "gi module not found" errors if the environment being used is missing python3-gi/pygobject. If you run into these errors, ensure they are installed and that the shebang of "/usr/local/bin/musik" points to the appropriate version of Python. Most users' should read `#!/usr/bin/python`. To edit the shebang, simply open "/usr/local/bin/musik" in a text editor of your choice and edit the very first line.
-
-### Known Issues:
-
-'HdyViewSwitcherBar' doesn't seem to be cooperating with my GTK composite template. Because of this, I have reverted back to using the standard 'GtkStackSwitcher'. It looks a lot less elegant and flows off of phone screens by default, but I plan on tackling this soon. In the meantime, using the "scale-to-fit" script on Phosh should make it usable via mobile. This can be done by launching the terminal and running `scale-to-fit musik on` as user or answering "Y" or "y" to the scale-to-fit prompt on installation.
