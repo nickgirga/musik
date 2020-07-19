@@ -17,6 +17,7 @@
 
 import os
 from gi.repository import Gtk
+from playsound import playsound
 
 @Gtk.Template(resource_path='/com/github/nickgirga/musik/window.ui')
 class MusikWindow(Gtk.ApplicationWindow):
@@ -40,3 +41,7 @@ class MusikWindow(Gtk.ApplicationWindow):
         message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "Sorry! This feature hasn't been implemented yet!")
         message.run()
         message.destroy()
+
+    @Gtk.Template.Callback()
+    def a1_pad_pressed(self, widget):
+        playsound("res/kick.wav")
