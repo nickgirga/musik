@@ -1827,6 +1827,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
+                        <signal name="clicked" handler="a2_pad_pressed" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1842,6 +1843,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
+                        <signal name="clicked" handler="a3_pad_pressed" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
