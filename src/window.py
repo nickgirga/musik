@@ -44,12 +44,12 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def a1_pad_pressed(self, widget):
-        playsound("res/kick.wav")
+        playsound("res/kick.ogg")
 
     @Gtk.Template.Callback()
     def a2_pad_pressed(self, widget):
-        playsound("res/snare.wav")
+        playsound("res/snare.ogg")
 
     @Gtk.Template.Callback()
     def a3_pad_pressed(self, widget):
-        playsound("res/hat.wav")
+        playsound("res/hat.ogg")
