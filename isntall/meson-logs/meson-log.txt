@@ -1,0 +1,11 @@
+Build started at 2020-07-16T18:07:18.106282
+Python binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.37.1
+Source dir: /home/nickgirga/Projects/musik
+Build dir: /home/nickgirga/Projects/musik/isntall
+Build type: native build
+
+Meson encountered an error in file meson.build, line 1, column 0:
+Not enough arguments to project(). Needs at least the project name and one language
