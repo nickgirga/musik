@@ -15,10 +15,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import os, pyaudio, wave
+import os
 from gi.repository import Gtk
-from pydub import AudioSegment
-from pydub.playback import play
 
 @Gtk.Template(resource_path='/com/github/nickgirga/musik/window.ui')
 class MusikWindow(Gtk.ApplicationWindow):
@@ -27,35 +25,9 @@ class MusikWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    # a general function used to play audio clips using pyaudio+wave
-    def play_audio_clip_pyaudio(self, clip_name, chunk_size):
-        # open sound file
-        wf = wave.open(clip_name, 'rb')
-
-        # create PortAudio interface
-        p = pyaudio.PyAudio()
-
-        #open .Stream object
-        stream = p.open(format = p.get_format_from_width(wf.getsamplewidth()), channels = wf.getchannels(), rate = wf.getframerate(), output = True)
-
-        # read data in chunks
-        data = wf.readframes(chunk_size)
-
-        #write to stream and play sound
-        while data != '':
-            stream.write(data)
-            data = wf.readframes(chunk_size)
-
-        # close stream
-        stream.close()
-
-        # terminate interface
-        p.terminate()
-
-    # a general function used to play audio using native linux commands
-    def play_wav_pydub(self, clip_name):
-        clip = AudioSegment.from_wav(clip_name)
-        play(clip)
+    # a general function used to play mp3 clips natively using mpg123
+    def play_mp3_native(self, clip_path):
+        os.system("mpg123 " + clip_path)
 
     # a general function used to open popup menus
     @Gtk.Template.Callback()
@@ -79,7 +51,7 @@ class MusikWindow(Gtk.ApplicationWindow):
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()
     def a1_pad_pressed(self, widget):
-        self.play_wav_pydub("res/kick.wav")
+        self.play_mp3_native("./res/kick.wav")
 
     # called when the pad in the A2 place is pressed
     @Gtk.Template.Callback()
