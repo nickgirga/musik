@@ -17,6 +17,7 @@
 
 import os
 from gi.repository import Gtk
+from threading import Thread
 
 @Gtk.Template(resource_path='/com/github/nickgirga/musik/window.ui')
 class MusikWindow(Gtk.ApplicationWindow):
@@ -27,7 +28,11 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     # a general function used to play mp3 clips natively using mpg123
     def play_mp3_native(self, clip_path):
-        os.system("mpg123 " + clip_path)
+        thread = Thread(target = self.audio_thread, args = (clip_path, ))
+        thread.start()
+
+    def audio_thread(self, args):
+        os.system("mpg123 " + args)
 
     # a general function used to open popup menus
     @Gtk.Template.Callback()
@@ -51,14 +56,14 @@ class MusikWindow(Gtk.ApplicationWindow):
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()
     def a1_pad_pressed(self, widget):
-        self.play_mp3_native("./res/kick.wav")
+        self.play_mp3_native("./res/kick.mp3")
 
     # called when the pad in the A2 place is pressed
     @Gtk.Template.Callback()
     def a2_pad_pressed(self, widget):
-        playsound("res/snare.ogg")
+        self.play_mp3_native("res/snare.mp3")
 
     # called when the pad in the A3 place is pressed
     @Gtk.Template.Callback()
     def a3_pad_pressed(self, widget):
-        playsound("res/hat.ogg")
+        self.play_mp3_native("res/hat.mp3")
