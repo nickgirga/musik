@@ -17,6 +17,8 @@
 
 import os, pyaudio, wave
 from gi.repository import Gtk
+from pydub import AudioSegment
+from pydub.playback import play
 
 @Gtk.Template(resource_path='/com/github/nickgirga/musik/window.ui')
 class MusikWindow(Gtk.ApplicationWindow):
@@ -26,7 +28,7 @@ class MusikWindow(Gtk.ApplicationWindow):
         super().__init__(**kwargs)
 
     # a general function used to play audio clips using pyaudio+wave
-    def play_audio_clip_pyaudio(clip_name, chunk_size):
+    def play_audio_clip_pyaudio(self, clip_name, chunk_size):
         # open sound file
         wf = wave.open(clip_name, 'rb')
 
@@ -50,6 +52,11 @@ class MusikWindow(Gtk.ApplicationWindow):
         # terminate interface
         p.terminate()
 
+    # a general function used to play audio using native linux commands
+    def play_wav_pydub(self, clip_name):
+        clip = AudioSegment.from_wav(clip_name)
+        play(clip)
+
     # a general function used to open popup menus
     @Gtk.Template.Callback()
     def popup_button_clicked(self, popup):
@@ -72,7 +79,7 @@ class MusikWindow(Gtk.ApplicationWindow):
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()
     def a1_pad_pressed(self, widget):
-        play_audio_clip_pyaudio("res/kick.wav", 1024)
+        self.play_wav_pydub("res/kick.wav")
 
     # called when the pad in the A2 place is pressed
     @Gtk.Template.Callback()
