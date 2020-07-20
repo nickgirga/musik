@@ -14,7 +14,7 @@ This is meant for simply having fun and jamming out on a mobile Linux device. It
   - Here you can start making changes and interacting with the git repository (like committing changes, etc).
 - I've just added a small installer script to simplify reconfiguring and installing Musik using meson. Simply call `./install.sh` in the root directory, enter your password when it pops up, and answer Y/N to the scale-to-fit prompt (for small devices running Phosh; most will answer no).
 - Now you should be able to launch it via a "musik" icon in you app launcher (a desktop file is left in /usr/local/share/applications) or you can use the command `musik`.
-  - !!! I am currently setting up a directory system for the projects. samples, plugins, etc. In the meantime, the app is going to use references locally to "./res/". This means that the app will not function correctly unless you launch it within the root project folder. Again, this will be fixed soon when I move all resource files to an easily accessible place (like Documents) and tell the app to actually look there. !!!
+  - !!! I am currently setting up a directory system for the projects, samples, plugins, etc. In the meantime, the app is going to use references locally to "./res/". This means that the app will not function correctly unless you launch it within the root project folder. Again, this will be fixed soon when I move all resource files to an easily accessible place (like Documents) and tell the app to actually look there. !!!
   
 - Have fun!
 
