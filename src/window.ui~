@@ -1818,11 +1818,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="a1_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">A1</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1838,11 +1834,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="a2_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">A2</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1858,11 +1850,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="a3_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">A3</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1878,11 +1866,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="a4_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">A4</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1898,11 +1882,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="b1_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">B1</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1918,11 +1898,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="b2_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">B2</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1938,11 +1914,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="b3_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">B3</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1958,11 +1930,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="b4_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">B4</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1978,11 +1946,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="c1_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">C1</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -1998,11 +1962,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="c2_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">C2</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -2018,11 +1978,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="c3_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">C3</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -2038,11 +1994,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="c4_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">C4</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -2058,11 +2010,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="a5_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">A5</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -2078,11 +2026,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="b5_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">B5</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -2098,11 +2042,7 @@ audio-volume-medium-symbolic</property>
                         <property name="relief">half</property>
                         <signal name="pressed" handler="c5_pad_pressed" object="pad_settings_stack" swapped="no"/>
                         <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">C5</property>
-                          </object>
+                          <placeholder/>
                         </child>
                       </object>
                       <packing>
@@ -2122,7 +2062,6 @@ audio-volume-medium-symbolic</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="transition_duration">100</property>
-                    <property name="transition_type">crossfade</property>
                     <child>
                       <object class="GtkBox" id="pad_a1_settings">
                         <property name="visible">True</property>
