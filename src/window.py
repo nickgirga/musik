@@ -76,17 +76,16 @@ class MusikWindow(Gtk.ApplicationWindow):
         # get children
         label = widget.get_children()[0]
         my_file_chooser_button = widget.get_children()[1]
+        padloc = self.pads[num][0]
+        filename = self.pads[num][1]
 
         # update label to match
-        label.set_text("Pad " + self.pads[num][0] + " Settings")
-        my_file_chooser_button.set_filename(self.pads[num][1])
-
-        # get filename/path
-        #temporarily omitted
+        label.set_text("Pad " + padloc + " Settings")
+        my_file_chooser_button.set_filename(filename)
 
         # verify file exists at specified path and play it using mpg123
-        #if (type(filename) == type(None)): return
-        #self.play_mp3_native(filename)
+        if (type(filename) == type(None) or filename == ""): return
+        self.play_mp3_native(filename)
 
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()
