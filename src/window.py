@@ -25,20 +25,20 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     # create a nested list to represent the different pads and the locations of their audio clips
     pads = [["A1", "res/kick.mp3"],
-                  ["A2", "res/snare.mp3"],
-                  ["A3", "res/hat.mp3"],
-                  ["A4", ""],
-                  ["A5", ""],
-                  ["B1", ""],
-                  ["B2", ""],
-                  ["B3", ""],
-                  ["B4", ""],
-                  ["B5", ""],
-                  ["C1", ""],
-                  ["C2", ""],
-                  ["C3", ""],
-                  ["C4", ""],
-                  ["C5", ""]]
+           ["A2", "res/snare.mp3"],
+           ["A3", "res/hat.mp3"],
+           ["A4", ""],
+           ["A5", ""],
+           ["B1", ""],
+           ["B2", ""],
+           ["B3", ""],
+           ["B4", ""],
+           ["B5", ""],
+           ["C1", ""],
+           ["C2", ""],
+           ["C3", ""],
+           ["C4", ""],
+           ["C5", ""]]
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
