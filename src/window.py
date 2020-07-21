@@ -83,14 +83,14 @@ class MusikWindow(Gtk.ApplicationWindow):
         self.last_pressed_pad = num
 
         # get children
-        #label = widget.get_children()[0]
-        #my_file_chooser_button = widget.get_children()[1]
+        label = widget.get_children()[0]
+        my_file_chooser_button = widget.get_children()[1]
         padloc = self.pads[self.last_pressed_pad][0]
         filename = self.pads[self.last_pressed_pad][1]
 
         # update label to match
-        #label.set_text("Pad " + padloc + " Settings")
-        #my_file_chooser_button.set_filename(filename)
+        label.set_text("Pad " + padloc + " Settings")
+        my_file_chooser_button.set_filename(filename)
 
         # verify file exists at specified path and play it using mpg123
         if (type(filename) == type(None) or filename == ""): return
