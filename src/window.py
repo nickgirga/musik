@@ -99,7 +99,7 @@ class MusikWindow(Gtk.ApplicationWindow):
     @Gtk.Template.Callback()
     def set_pad_clip(self, widget):
         filename = widget.get_filename()
-        if (type(filename) or filename == ""):
+        if (type(filename) == type(None) or filename == ""):
             self.create_simple_message_dialog("Error setting audio clip. Ensure the clip exists in the specified location and ensure it is in MP3 format.")
             return
         self.pads[self.last_pressed_pad][1] = filename
