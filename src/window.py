@@ -87,6 +87,10 @@ class MusikWindow(Gtk.ApplicationWindow):
         if (type(filename) == type(None) or filename == ""): return
         self.play_mp3_native(filename)
 
+    @Gtk.Template.Callback()
+    def set_pad_clip(self, widget):
+        pass
+
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()
     def a1_pad_pressed(self, widget):
