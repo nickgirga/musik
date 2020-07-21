@@ -2122,7 +2122,6 @@ audio-volume-medium-symbolic</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="transition_duration">100</property>
-                    <property name="transition_type">crossfade</property>
                     <child>
                       <object class="GtkBox" id="pad_a1_settings">
                         <property name="visible">True</property>

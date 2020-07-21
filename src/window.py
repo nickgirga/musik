@@ -59,15 +59,15 @@ class MusikWindow(Gtk.ApplicationWindow):
         my_stack = widget.get_children()[num]
         my_file_chooser_button = my_stack.get_children()[1]
 
+        # set the current pad's settings to be visible
+        widget.set_visible_child(my_stack)
+
         # get filename/path
         filename = my_file_chooser_button.get_filename()
 
         # verify file exists at specified path and play it using mpg123
         if (type(filename) == type(None)): return
         self.play_mp3_native(filename)
-
-        # set the current pad's settings to be visible
-        widget.set_visible_child(my_stack)
 
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()
