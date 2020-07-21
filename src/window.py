@@ -48,6 +48,7 @@ class MusikWindow(Gtk.ApplicationWindow):
         thread = Thread(target = self.audio_thread, args = (clip_path, ))
         thread.start()
 
+    # a gernal function used to create new threads that play audio using mpg123
     def audio_thread(self, args):
         os.system("mpg123 " + args)
 
