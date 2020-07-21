@@ -52,7 +52,7 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     # a gernal function used to create new threads that play audio using mpg123
     def audio_thread(self, args):
-        os.system("mpg123 " + args)
+        os.system("mpg123 \"" + args + "\"")
 
     # creates a simple message dialog with the OK button and INFO message type
     def create_simple_message_dialog(self, text):
