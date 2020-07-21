@@ -1,163 +1,163 @@
 [
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "/usr/bin/meson --internal msgfmthelper ../data/com.github.nickgirga.musik.desktop.in data/com.github.nickgirga.musik.desktop desktop ../data/../po",
     "file": "../data/com.github.nickgirga.musik.desktop.in",
     "output": "data/com.github.nickgirga.musik.desktop"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "/usr/bin/meson --internal msgfmthelper ../data/com.github.nickgirga.musik.appdata.xml.in data/com.github.nickgirga.musik.appdata.xml xml ../data/../po",
     "file": "../data/com.github.nickgirga.musik.appdata.xml.in",
     "output": "data/com.github.nickgirga.musik.appdata.xml"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "glib-compile-resources ../src/musik.gresource.xml --sourcedir ../src --internal --generate --target src/musik.gresource --dependency-file src/musik.gresource.d",
     "file": "../src/musik.gresource.xml",
     "output": "src/musik.gresource"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-musik-pot",
     "output": "musik-pot"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-musik-gmo",
     "output": "musik-gmo"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-musik-update-po",
     "output": "musik-update-po"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "/usr/bin/meson test --no-rebuild --print-errorlogs",
     "file": "all",
     "output": "meson-test"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-test",
     "output": "test"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "/usr/bin/meson test --benchmark --logbase benchmarklog --num-processes=1 --no-rebuild",
     "file": "all",
     "output": "meson-benchmark"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-benchmark",
     "output": "benchmark"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "/usr/bin/meson install --no-rebuild",
     "file": "PHONY",
     "output": "meson-install"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-install",
     "output": "install"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "/usr/bin/meson dist",
     "file": "PHONY",
     "output": "meson-dist"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-dist",
     "output": "dist"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
-    "command": "/usr/bin/meson --internal scanbuild /home/manjaro/Projects/musik /home/manjaro/Projects/musik/_build /usr/bin/meson",
+    "directory": "/home/nick/Projects/musik/_build",
+    "command": "/usr/bin/meson --internal scanbuild /home/nick/Projects/musik /home/nick/Projects/musik/_build /usr/bin/meson",
     "file": "PHONY",
     "output": "meson-scan-build"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-scan-build",
     "output": "scan-build"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
-    "command": "/usr/bin/meson --internal tags ctags /home/manjaro/Projects/musik",
+    "directory": "/home/nick/Projects/musik/_build",
+    "command": "/usr/bin/meson --internal tags ctags /home/nick/Projects/musik",
     "file": "PHONY",
     "output": "meson-ctags"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-ctags",
     "output": "ctags"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "/usr/bin/meson --internal uninstall",
     "file": "PHONY",
     "output": "meson-uninstall"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-uninstall",
     "output": "uninstall"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "data/com.github.nickgirga.musik.desktop",
     "output": "all"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-clean",
     "output": "clean"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
-    "command": "/usr/bin/meson --internal cleantrees /home/manjaro/Projects/musik/_build/meson-private/cleantrees.dat",
+    "directory": "/home/nick/Projects/musik/_build",
+    "command": "/usr/bin/meson --internal cleantrees /home/nick/Projects/musik/_build/meson-private/cleantrees.dat",
     "file": "PHONY",
     "output": "meson-clean-ctlist"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "",
     "file": "meson-clean-ctlist",
     "output": "clean-ctlist"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
+    "directory": "/home/nick/Projects/musik/_build",
     "command": "/usr/bin/ninja -t clean",
     "file": "PHONY",
     "output": "meson-clean"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
-    "command": "/usr/bin/meson --internal regenerate /home/manjaro/Projects/musik /home/manjaro/Projects/musik/_build --backend ninja",
+    "directory": "/home/nick/Projects/musik/_build",
+    "command": "/usr/bin/meson --internal regenerate /home/nick/Projects/musik /home/nick/Projects/musik/_build --backend ninja",
     "file": "../meson.build",
     "output": "build.ninja"
   },
   {
-    "directory": "/home/manjaro/Projects/musik/_build",
-    "command": "/usr/bin/meson --internal regenerate /home/manjaro/Projects/musik /home/manjaro/Projects/musik/_build --backend ninja",
+    "directory": "/home/nick/Projects/musik/_build",
+    "command": "/usr/bin/meson --internal regenerate /home/nick/Projects/musik /home/nick/Projects/musik/_build --backend ninja",
     "file": "PHONY",
     "output": "reconfigure"
   }
