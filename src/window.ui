@@ -2083,6 +2083,7 @@ audio-volume-medium-symbolic</property>
                         <property name="margin_end">5</property>
                         <property name="filter">sound_clip_filer</property>
                         <property name="title" translatable="yes">Pad Sound</property>
+                        <signal name="file-set" handler="set_pad_clip" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>

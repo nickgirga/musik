@@ -23,7 +23,7 @@ from threading import Thread
 class MusikWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MusikWindow'
 
-    # create a nested list to represent the different pads and the locations of their audio clips
+    # a nested list to represent the different pads and the locations of their audio clips
     pads = [["A1", "res/kick.mp3"],
            ["A2", "res/snare.mp3"],
            ["A3", "res/hat.mp3"],
@@ -39,6 +39,8 @@ class MusikWindow(Gtk.ApplicationWindow):
            ["C3", ""],
            ["C4", ""],
            ["C5", ""]]
+    # stores the index of the pad button that was last pressed; used for displaying pad settings
+    last_pressed_pad = 0
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -51,6 +53,12 @@ class MusikWindow(Gtk.ApplicationWindow):
     # a gernal function used to create new threads that play audio using mpg123
     def audio_thread(self, args):
         os.system("mpg123 " + args)
+
+    # creates a simple message dialog with the OK button and INFO message type
+    def create_simple_message_dialog(self, text):
+        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, text)
+        message.run()
+        message.destroy()
 
     # a general function used to open popup menus
     @Gtk.Template.Callback()
@@ -67,17 +75,18 @@ class MusikWindow(Gtk.ApplicationWindow):
     # a general function used as a placeholder to verify signals are working on UI elements
     @Gtk.Template.Callback()
     def feature_not_implemented(self, widget):
-        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "Sorry! This feature hasn't been implemented yet!")
-        message.run()
-        message.destroy()
+        self.create_simple_message_dialog("Sorry! This feature hasn't been implemented yet!")
 
     # this function is called any time a pad is pressed. `num` is the index of the stack that the pad's settings reside on
     def press_pad(self, widget, num):
+        # update last_pressed_pad
+        self.last_pressed_pad = num
+
         # get children
         label = widget.get_children()[0]
         my_file_chooser_button = widget.get_children()[1]
-        padloc = self.pads[num][0]
-        filename = self.pads[num][1]
+        padloc = self.pads[self.last_pressed_pad][0]
+        filename = self.pads[self.last_pressed_pad][1]
 
         # update label to match
         label.set_text("Pad " + padloc + " Settings")
@@ -89,7 +98,12 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def set_pad_clip(self, widget):
-        pass
+        filename = widget.get_filename()
+        if (type(filename) or filename == ""):
+            self.create_simple_message_dialog("Error setting audio clip. Ensure the clip exists in the specified location and ensure it is in MP3 format.")
+            return
+        self.pads[self.last_pressed_pad][1] = filename
+        print("Successfully set pad " + self.pads[self.last_pressed_pad][0] + " audio clip location to \"" + filename + "\"")
 
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()
