@@ -23,6 +23,23 @@ from threading import Thread
 class MusikWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MusikWindow'
 
+    # create a nested list to represent the different pads and the locations of their audio clips
+    pads = [["A1", "res/kick.mp3"],
+                  ["A2", "res/snare.mp3"],
+                  ["A3", "res/hat.mp3"],
+                  ["A4", ""],
+                  ["A5", ""],
+                  ["B1", ""],
+                  ["B2", ""],
+                  ["B3", ""],
+                  ["B4", ""],
+                  ["B5", ""],
+                  ["C1", ""],
+                  ["C2", ""],
+                  ["C3", ""],
+                  ["C4", ""],
+                  ["C5", ""]]
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -56,18 +73,19 @@ class MusikWindow(Gtk.ApplicationWindow):
     # this function is called any time a pad is pressed. `num` is the index of the stack that the pad's settings reside on
     def press_pad(self, widget, num):
         # get children
-        my_stack = widget.get_children()[num]
-        my_file_chooser_button = my_stack.get_children()[1]
+        label = widget.get_children()[0]
+        my_file_chooser_button = widget.get_children()[1]
 
-        # set the current pad's settings to be visible
-        widget.set_visible_child(my_stack)
+        # update label to match
+        label.set_text("Pad " + self.pads[num][0] + " Settings")
+        my_file_chooser_button.set_filename(self.pads[num][1])
 
         # get filename/path
-        filename = my_file_chooser_button.get_filename()
+        #temporarily omitted
 
         # verify file exists at specified path and play it using mpg123
-        if (type(filename) == type(None)): return
-        self.play_mp3_native(filename)
+        #if (type(filename) == type(None)): return
+        #self.play_mp3_native(filename)
 
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()

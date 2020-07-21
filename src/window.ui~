@@ -1816,7 +1816,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="a1_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="a1_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1832,7 +1832,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="a2_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="a2_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1848,7 +1848,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="a3_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="a3_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1864,7 +1864,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="a4_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="a4_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1880,7 +1880,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="b1_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="b1_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1896,7 +1896,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="b2_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="b2_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1912,7 +1912,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="b3_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="b3_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1928,7 +1928,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="b4_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="b4_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1944,7 +1944,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="c1_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="c1_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1960,7 +1960,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="c2_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="c2_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1976,7 +1976,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="c3_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="c3_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -1992,7 +1992,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="c4_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="c4_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -2008,7 +2008,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="a5_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="a5_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -2024,7 +2024,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="b5_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="b5_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -2040,7 +2040,7 @@ audio-volume-medium-symbolic</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="relief">half</property>
-                        <signal name="pressed" handler="c5_pad_pressed" object="pad_settings_stack" swapped="no"/>
+                        <signal name="pressed" handler="c5_pad_pressed" object="pad_settings" swapped="no"/>
                         <child>
                           <placeholder/>
                         </child>
@@ -2058,680 +2058,36 @@ audio-volume-medium-symbolic</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkStack" id="pad_settings_stack">
+                  <object class="GtkBox" id="pad_settings">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="transition_duration">100</property>
+                    <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkBox" id="pad_a1_settings">
+                      <object class="GtkLabel" id="pad_settings_label">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad A1 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a1_audio_clip">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
+                        <property name="label" translatable="yes">Pad A1 Settings</property>
                       </object>
                       <packing>
-                        <property name="name">page0</property>
-                        <property name="title" translatable="yes">page0</property>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="padding">5</property>
+                        <property name="position">0</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkBox" id="pad_a2_settings">
+                      <object class="GtkFileChooserButton" id="pad_audio_clip">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad A2 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
+                        <property name="margin_start">5</property>
+                        <property name="margin_end">5</property>
+                        <property name="filter">sound_clip_filer</property>
+                        <property name="title" translatable="yes">Pad Sound</property>
                       </object>
                       <packing>
-                        <property name="name">page1</property>
-                        <property name="title" translatable="yes">page1</property>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
                         <property name="position">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_a3_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad A3 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip1">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page2</property>
-                        <property name="title" translatable="yes">page2</property>
-                        <property name="position">2</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_a4_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad A4 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip2">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page3</property>
-                        <property name="title" translatable="yes">page3</property>
-                        <property name="position">3</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_a5_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad A5 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip3">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page4</property>
-                        <property name="title" translatable="yes">page4</property>
-                        <property name="position">4</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_B1_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad B1 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip4">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page5</property>
-                        <property name="title" translatable="yes">page5</property>
-                        <property name="position">5</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_B2_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad B2 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip5">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page6</property>
-                        <property name="title" translatable="yes">page6</property>
-                        <property name="position">6</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_B3_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad B3 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip6">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page7</property>
-                        <property name="title" translatable="yes">page7</property>
-                        <property name="position">7</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_B4_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad B4 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip7">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page8</property>
-                        <property name="title" translatable="yes">page8</property>
-                        <property name="position">8</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_B5_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad B5 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip8">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page9</property>
-                        <property name="title" translatable="yes">page9</property>
-                        <property name="position">9</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_C1_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad C1 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip9">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page10</property>
-                        <property name="title" translatable="yes">page10</property>
-                        <property name="position">10</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_C2_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad C2 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip10">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page11</property>
-                        <property name="title" translatable="yes">page11</property>
-                        <property name="position">11</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_C3_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad C3 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip11">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page12</property>
-                        <property name="title" translatable="yes">page12</property>
-                        <property name="position">12</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_C4_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad C4 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip12">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page13</property>
-                        <property name="title" translatable="yes">page13</property>
-                        <property name="position">13</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkBox" id="pad_C5_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Pad C5 Settings</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="padding">5</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkFileChooserButton" id="pad_a2_audio_clip13">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_right">5</property>
-                            <property name="margin_start">5</property>
-                            <property name="margin_end">5</property>
-                            <property name="filter">sound_clip_filer</property>
-                            <property name="title" translatable="yes">Pad Sound</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <placeholder/>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="name">page14</property>
-                        <property name="title" translatable="yes">page14</property>
-                        <property name="position">14</property>
                       </packing>
                     </child>
                   </object>
