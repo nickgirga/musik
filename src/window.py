@@ -24,9 +24,9 @@ class MusikWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MusikWindow'
 
     # a nested list to represent the different pads and the locations of their audio clips
-    pads = [["A1", "res/kick.mp3"],
-           ["A2", "res/snare.mp3"],
-           ["A3", "res/hat.mp3"],
+    pads = [["A1", ""],
+           ["A2", ""],
+           ["A3", ""],
            ["A4", ""],
            ["A5", ""],
            ["B1", ""],
