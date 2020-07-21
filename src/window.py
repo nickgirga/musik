@@ -53,122 +53,93 @@ class MusikWindow(Gtk.ApplicationWindow):
         message.run()
         message.destroy()
 
+    # this function is called any time a pad is pressed. `num` is the index of the stack that the pad's settings reside on
+    def press_pad(self, widget, num):
+        # get children
+        my_stack = widget.get_children()[num]
+        my_file_chooser_button = my_stack.get_children()[1]
+
+        # get filename/path
+        filename = my_file_chooser_button.get_filename()
+
+        # verify file exists at specified path and play it using mpg123
+        if (type(filename) == type(None)): return
+        self.play_mp3_native(filename)
+
+        # set the current pad's settings to be visible
+        widget.set_visible_child(my_stack)
+
     # called when the pad in the A1 place is pressed
     @Gtk.Template.Callback()
     def a1_pad_pressed(self, widget):
-        my_stack = widget.get_children()[0]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 0)
 
     # called when the pad in the A2 place is pressed
     @Gtk.Template.Callback()
     def a2_pad_pressed(self, widget):
-        my_stack = widget.get_children()[1]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 1)
 
     # called when the pad in the A3 place is pressed
     @Gtk.Template.Callback()
     def a3_pad_pressed(self, widget):
-        my_stack = widget.get_children()[2]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 2)
 
     # called when the pad in the A4 place is pressed
     @Gtk.Template.Callback()
     def a4_pad_pressed(self, widget):
-        my_stack = widget.get_children()[3]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 3)
 
     # called when the pad in the A5 place is pressed
     @Gtk.Template.Callback()
     def a5_pad_pressed(self, widget):
-        my_stack = widget.get_children()[4]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 4)
 
     # called when the pad in the B1 place is pressed
     @Gtk.Template.Callback()
     def b1_pad_pressed(self, widget):
-        my_stack = widget.get_children()[5]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 5)
 
     # called when the pad in the B2 place is pressed
     @Gtk.Template.Callback()
     def b2_pad_pressed(self, widget):
-        my_stack = widget.get_children()[6]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 6)
 
     # called when the pad in the B3 place is pressed
     @Gtk.Template.Callback()
     def b3_pad_pressed(self, widget):
-        my_stack = widget.get_children()[7]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 7)
 
     # called when the pad in the B4 place is pressed
     @Gtk.Template.Callback()
     def b4_pad_pressed(self, widget):
-        my_stack = widget.get_children()[8]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 8)
 
     # called when the pad in the B5 place is pressed
     @Gtk.Template.Callback()
     def b5_pad_pressed(self, widget):
-        my_stack = widget.get_children()[9]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 9)
 
     # called when the pad in the C1 place is pressed
     @Gtk.Template.Callback()
     def c1_pad_pressed(self, widget):
-        my_stack = widget.get_children()[10]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 10)
 
     # called when the pad in the C2 place is pressed
     @Gtk.Template.Callback()
     def c2_pad_pressed(self, widget):
-        my_stack = widget.get_children()[11]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 11)
 
     # called when the pad in the C3 place is pressed
     @Gtk.Template.Callback()
     def c3_pad_pressed(self, widget):
-        my_stack = widget.get_children()[12]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 12)
 
     # called when the pad in the C4 place is pressed
     @Gtk.Template.Callback()
     def c4_pad_pressed(self, widget):
-        my_stack = widget.get_children()[13]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 13)
 
     # called when the pad in the C5 place is pressed
     @Gtk.Template.Callback()
     def c5_pad_pressed(self, widget):
-        my_stack = widget.get_children()[14]
-        my_file_chooser_button = my_stack.get_children()[1]
-        self.play_mp3_native(my_file_chooser_button.get_filename())
-        widget.set_visible_child(my_stack)
+        self.press_pad(widget, 14)
