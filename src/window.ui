@@ -3149,6 +3149,7 @@ audio-volume-medium-symbolic</property>
             <property name="receives_default">True</property>
             <property name="text" translatable="yes">Edit Effects</property>
             <property name="menu_name">more_mixer_popover:1</property>
+            <signal name="clicked" handler="feature_not_implemented" swapped="no"/>
           </object>
           <packing>
             <property name="expand">False</property>
