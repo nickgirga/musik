@@ -29,18 +29,18 @@ class MusikWindow(Gtk.ApplicationWindow):
     pads = [["A1", ""],
            ["B1", ""],
            ["C1", ""],
+           ["D1", ""],
+           ["E1", ""],
            ["A2", ""],
            ["B2", ""],
            ["C2", ""],
+           ["D2", ""],
+           ["E2", ""],
            ["A3", ""],
            ["B3", ""],
            ["C3", ""],
-           ["A4", ""],
-           ["B4", ""],
-           ["C4", ""],
-           ["A5", ""],
-           ["B5", ""],
-           ["C5", ""]]
+           ["D3", ""],
+           ["E3", ""]]
     # stores the index of the pad button that was last pressed; used for displaying pad settings
     last_pressed_pad = 0
 
