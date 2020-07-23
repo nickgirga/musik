@@ -54,8 +54,7 @@ class MusikWindow(Gtk.ApplicationWindow):
                 print("Done creating Musik library!")
             else:
                 # skip library creation and exit
-                self.create_simple_message_dialog("Musik library creation cancelled. Exiting due to lack of asset dependencies.", False)
-                sys.exit()
+                print("skipping library creation... (user request)")
 
         # initialize audio clips
         return
