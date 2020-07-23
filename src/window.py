@@ -26,21 +26,10 @@ class MusikWindow(Gtk.ApplicationWindow):
     LIBRARY_PATH = os.path.expanduser('~/Documents/musik')
 
     # a nested list to represent the different pads and the locations of their audio clips
-    pads = [["A1", ""],
-           ["B1", ""],
-           ["C1", ""],
-           ["D1", ""],
-           ["E1", ""],
-           ["A2", ""],
-           ["B2", ""],
-           ["C2", ""],
-           ["D2", ""],
-           ["E2", ""],
-           ["A3", ""],
-           ["B3", ""],
-           ["C3", ""],
-           ["D3", ""],
-           ["E3", ""]]
+    pads = [["A1", ""], ["B1", ""], ["C1", ""], ["D1", ""], ["E1", ""],
+           ["A2", ""], ["B2", ""], ["C2", ""], ["D2", ""], ["E2", ""],
+           ["A3", ""], ["B3", ""], ["C3", ""], ["D3", ""], ["E3", ""]]
+    
     # stores the index of the pad button that was last pressed; used for displaying pad settings
     last_pressed_pad = 0
 
