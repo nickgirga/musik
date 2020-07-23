@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import os
+import os, sys
 from gi.repository import Gtk
 from threading import Thread
 
@@ -52,8 +52,14 @@ class MusikWindow(Gtk.ApplicationWindow):
     def initialize_audio_clips(self):
         # verify the library's root folder exists
         if (not os.path.exists(self.LIBRARY_PATH)):
-            self.create_simple_message_dialog("No musik library was found in \"~/Documents\". Creating a new library.")
-            # if nonexistent, git clone asset library and extract the wanted folder into "~/Documents"
+            response = self.create_simple_message_dialog("No musik library was found in \"~/Documents\". Would you like to create a new library directory at \"~/Documents/musik\"?", True)
+            if (response == Gtk.ResponseType.YES):
+                # git clone asset library and extract the wanted folder into "~/Documents"
+                print("creating library at \"~/Documents/musik\"...")
+            else:
+                # skip library creation
+                self.create_simple_message_dialog("Musik library creation cancelled. Exiting due to lack of asset dependencies.", False)
+                sys.exit()
 
         # initialize audio clips
         return
@@ -68,10 +74,11 @@ class MusikWindow(Gtk.ApplicationWindow):
         os.system("mpg123 \"" + args + "\"")
 
     # creates a simple message dialog with the OK button and INFO message type
-    def create_simple_message_dialog(self, text):
-        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, text)
-        message.run()
+    def create_simple_message_dialog(self, text, yesno):
+        message = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.YES_NO if yesno else Gtk.ButtonsType.OK, text)
+        response = message.run()
         message.destroy()
+        return response
 
     # a general function used to open popup menus
     @Gtk.Template.Callback()
@@ -88,7 +95,7 @@ class MusikWindow(Gtk.ApplicationWindow):
     # a general function used as a placeholder to verify signals are working on UI elements
     @Gtk.Template.Callback()
     def feature_not_implemented(self, widget):
-        self.create_simple_message_dialog("Sorry! This feature hasn't been implemented yet!")
+        self.create_simple_message_dialog("Sorry! This feature hasn't been implemented yet!", False)
 
     # this function is called any time a pad is pressed. `num` is the index of the stack that the pad's settings reside on
     def press_pad(self, widget, num):
@@ -113,7 +120,7 @@ class MusikWindow(Gtk.ApplicationWindow):
     def set_pad_clip(self, widget):
         filename = widget.get_filename()
         if (type(filename) == type(None) or filename == ""):
-            self.create_simple_message_dialog("Error setting audio clip. Ensure the clip exists in the specified location and ensure it is in MP3 format.")
+            self.create_simple_message_dialog("Error setting audio clip. Ensure the clip exists in the specified location and ensure it is in MP3 format.", False)
             return
         self.pads[self.last_pressed_pad][1] = filename
         print("Successfully set pad " + self.pads[self.last_pressed_pad][0] + " audio clip location to \"" + filename + "\"")
