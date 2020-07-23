@@ -50,7 +50,13 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     # called upon initialization to fetch existing default sounds. if none exist, download from git repository
     def initialize_audio_clips(self):
-        print(self.LIBRARY_PATH)
+        # verify the library's root folder exists
+        if (not os.exists(self.LIBRARY_PATH)):
+            self.create_simple_message_dialog("No musik library was found in \"~/Documents\". Creating a new library.")
+            # if nonexistent, git clone asset library and extract the wanted folder into "~/Documents"
+
+        # initialize audio clips
+        return
 
     # a general function used to play mp3 clips natively using mpg123
     def play_mp3_native(self, clip_path):
