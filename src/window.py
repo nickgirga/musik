@@ -23,6 +23,8 @@ from threading import Thread
 class MusikWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MusikWindow'
 
+    LIBRARY_PATH = os.path.expanduser('~/Documents/musik')
+
     # a nested list to represent the different pads and the locations of their audio clips
     pads = [["A1", ""],
            ["A2", ""],
@@ -44,6 +46,11 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.initialize_audio_clips()
+
+    # called upon initialization to fetch existing default sounds. if none exist, download from git repository
+    def initialize_audio_clips(self):
+        print(LIBRARY_PATH)
 
     # a general function used to play mp3 clips natively using mpg123
     def play_mp3_native(self, clip_path):
