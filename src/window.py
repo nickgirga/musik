@@ -27,19 +27,19 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     # a nested list to represent the different pads and the locations of their audio clips
     pads = [["A1", ""],
-           ["A2", ""],
-           ["A3", ""],
-           ["A4", ""],
-           ["A5", ""],
            ["B1", ""],
-           ["B2", ""],
-           ["B3", ""],
-           ["B4", ""],
-           ["B5", ""],
            ["C1", ""],
+           ["A2", ""],
+           ["B2", ""],
            ["C2", ""],
+           ["A3", ""],
+           ["B3", ""],
            ["C3", ""],
+           ["A4", ""],
+           ["B4", ""],
            ["C4", ""],
+           ["A5", ""],
+           ["B5", ""],
            ["C5", ""]]
     # stores the index of the pad button that was last pressed; used for displaying pad settings
     last_pressed_pad = 0
