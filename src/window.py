@@ -46,10 +46,10 @@ class MusikWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.initialize_audio_clips()
+        self.initialize_musik_library()
 
-    # called upon initialization to fetch existing default sounds. if none exist, download from git repository
-    def initialize_audio_clips(self):
+    # called upon initialization to fetch existing default assets. if none exist, download from git repository
+    def initialize_musik_library(self):
         # verify the library's root folder exists
         if (not os.path.exists(self.LIBRARY_PATH)):
             response = self.create_simple_message_dialog("No musik library was found in \"~/Documents\". Would you like to create a new library directory at \"~/Documents/musik\"?", True)
