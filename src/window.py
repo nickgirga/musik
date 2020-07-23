@@ -26,9 +26,9 @@ class MusikWindow(Gtk.ApplicationWindow):
     LIBRARY_PATH = os.path.expanduser('~/Documents/musik')
 
     # a nested list to represent the different pads and the locations of their audio clips
-    pads = [["A1", ""], ["B1", ""], ["C1", ""], ["D1", ""], ["E1", ""],
-           ["A2", ""], ["B2", ""], ["C2", ""], ["D2", ""], ["E2", ""],
-           ["A3", ""], ["B3", ""], ["C3", ""], ["D3", ""], ["E3", ""]]
+    pads = [["A1", LIBRARY_PATH + "/Samples/Percussion/kick.mp3"], ["B1", LIBRARY_PATH + "/Samples/Percussion/snare.mp3"], ["C1", LIBRARY_PATH + "/Samples/Percussion/hat.mp3"], ["D1", LIBRARY_PATH + "/Samples"], ["E1", LIBRARY_PATH + "/Samples"],
+           ["A2", LIBRARY_PATH + "/Samples"], ["B2", LIBRARY_PATH + "/Samples"], ["C2", LIBRARY_PATH + "/Samples"], ["D2", LIBRARY_PATH + "/Samples"], ["E2", LIBRARY_PATH + "/Samples"],
+           ["A3", LIBRARY_PATH + "/Samples"], ["B3", LIBRARY_PATH + "/Samples"], ["C3", LIBRARY_PATH + "/Samples"], ["D3", LIBRARY_PATH + "/Samples"], ["E3", LIBRARY_PATH + "/Samples"]]
     
     # stores the index of the pad button that was last pressed; used for displaying pad settings
     last_pressed_pad = 0
@@ -52,6 +52,7 @@ class MusikWindow(Gtk.ApplicationWindow):
                 
                 # finish
                 print("Done creating Musik library!")
+                print(self.pads[0][1])
             else:
                 # skip library creation and exit
                 print("skipping library creation... (user request)")
