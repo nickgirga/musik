@@ -43,10 +43,17 @@ class MusikWindow(Gtk.ApplicationWindow):
         if (not os.path.exists(self.LIBRARY_PATH)):
             response = self.create_simple_message_dialog("No musik library was found in \"~/Documents\". Would you like to create a new library directory at \"~/Documents/musik\"?", True)
             if (response == Gtk.ResponseType.YES):
-                # git clone asset library and extract the wanted folder into "~/Documents"
-                print("creating library at \"~/Documents/musik\"...")
+                print("Started creating library at \"~/Documents/musik\"...")
+                
+                # clone assets into temporary directory
+                print("Cloning assets from https://github.com/nickgirga/musik-asset-library.git")
+                os.system("git clone https://github.com/nickgirga/musik-asset-library.git " + LIBRARY_PATH)
+                print("Done cloning assets!")
+                
+                # finish
+                print("Done creating Musik library!")
             else:
-                # skip library creation
+                # skip library creation and exit
                 self.create_simple_message_dialog("Musik library creation cancelled. Exiting due to lack of asset dependencies.", False)
                 sys.exit()
 
