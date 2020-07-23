@@ -5,7 +5,7 @@ This is meant for simply having fun and jamming out on a mobile Linux device. It
 
 ## Build instructions
 
-- This uses the meson build system, so make sure you have that installed. Also make sure you have at least `GTK 3` and `mpg123` installed for runtime.
+- This uses the meson build system, so make sure you have that installed. Also make sure you have at least `GTK 3` (as well as `PyGObject`) and `mpg123` installed for runtime.
   - Probably not a bad idea to run `sudo apt-get install build-essential` or `sudo pacman -S base-devel` before hand to grab common build dependencies.
 - Navigate to where you store projects using `cd` in the CLI or a GUI file browser.
   - If in a GUI file browser, right click or click the menu button and look for a "Open in terminal" option. If this doesn't exist in your GUI, just open a terminal and manually navigate to it using `cd [directory]`.
