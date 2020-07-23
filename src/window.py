@@ -47,7 +47,7 @@ class MusikWindow(Gtk.ApplicationWindow):
                 
                 # clone assets into temporary directory
                 print("Cloning assets from https://github.com/nickgirga/musik-asset-library.git")
-                os.system("git clone https://github.com/nickgirga/musik-asset-library.git " + LIBRARY_PATH)
+                os.system("git clone https://github.com/nickgirga/musik-asset-library.git " + self.LIBRARY_PATH)
                 print("Done cloning assets!")
                 
                 # finish
