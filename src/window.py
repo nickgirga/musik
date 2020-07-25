@@ -28,7 +28,7 @@ class MusikWindow(Gtk.ApplicationWindow):
     # a nested list to represent the different pads and the locations of their audio clips
     pads = [["A1", LIBRARY_PATH + "/Samples/Percussion/Kicks/kick0.mp3"], ["B1", LIBRARY_PATH + "/Samples/Percussion/Snares/snare0.mp3"], ["C1", LIBRARY_PATH + "/Samples/Percussion/Hats/Closed/closed-hat0.mp3"], ["D1", LIBRARY_PATH + "/Samples/Percussion/Hats/Half/half-closed-hat0.mp3"], ["E1", LIBRARY_PATH + "/Samples/Percussion/Hats/Open/open-hat0.mp3"],
            ["A2", LIBRARY_PATH + "/Samples"], ["B2", LIBRARY_PATH + "/Samples"], ["C2", LIBRARY_PATH + "/Samples"], ["D2", LIBRARY_PATH + "/Samples"], ["E2", LIBRARY_PATH + "/Samples"],
-           ["A3", LIBRARY_PATH + "/Samples"], ["B3", LIBRARY_PATH + "/Samples"], ["C3", LIBRARY_PATH + "/Samples"], ["D3", LIBRARY_PATH + "/Samples"], ["E3", LIBRARY_PATH + "/Samples"]]
+           ["A3", LIBRARY_PATH + "/Samples/Ukulele/uke0.mp3"], ["B3", LIBRARY_PATH + "/Samples/Ukulele/uke1.mp3"], ["C3", LIBRARY_PATH + "/Samples/Ukulele/uke2.mp3"], ["D3", LIBRARY_PATH + "/Samples/Ukulele/uke3.mp3"], ["E3", LIBRARY_PATH + "/Samples"]]
     
     # stores the index of the pad button that was last pressed; used for displaying pad settings
     last_pressed_pad = 0
