@@ -26,7 +26,7 @@ class MusikWindow(Gtk.ApplicationWindow):
     LIBRARY_PATH = os.path.expanduser('~/Documents/musik')
 
     # a nested list to represent the different pads and the locations of their audio clips
-    pads = [["A1", LIBRARY_PATH + "/Samples/Percussion/Kick/kick0.mp3"], ["B1", LIBRARY_PATH + "/Samples/Percussion/Snare/snare0.mp3"], ["C1", LIBRARY_PATH + "/Samples/Percussion/Hats/Closed/closed-hat0.mp3"], ["D1", LIBRARY_PATH + "/Samples/Percussion/Hats/Half/half-closed-hat0.mp3"], ["E1", LIBRARY_PATH + "/Samples/Percussion/Hats/Open/open-hat0.mp3"],
+    pads = [["A1", LIBRARY_PATH + "/Samples/Percussion/Kicks/kick0.mp3"], ["B1", LIBRARY_PATH + "/Samples/Percussion/Snares/snare0.mp3"], ["C1", LIBRARY_PATH + "/Samples/Percussion/Hats/Closed/closed-hat0.mp3"], ["D1", LIBRARY_PATH + "/Samples/Percussion/Hats/Half/half-closed-hat0.mp3"], ["E1", LIBRARY_PATH + "/Samples/Percussion/Hats/Open/open-hat0.mp3"],
            ["A2", LIBRARY_PATH + "/Samples"], ["B2", LIBRARY_PATH + "/Samples"], ["C2", LIBRARY_PATH + "/Samples"], ["D2", LIBRARY_PATH + "/Samples"], ["E2", LIBRARY_PATH + "/Samples"],
            ["A3", LIBRARY_PATH + "/Samples"], ["B3", LIBRARY_PATH + "/Samples"], ["C3", LIBRARY_PATH + "/Samples"], ["D3", LIBRARY_PATH + "/Samples"], ["E3", LIBRARY_PATH + "/Samples"]]
     
@@ -108,7 +108,7 @@ class MusikWindow(Gtk.ApplicationWindow):
         label.set_text("Pad " + padloc + " Settings")
         my_file_chooser_button.set_filename(filename)
 
-        # verify file exists at specified path and play it using mpg123
+        #  verify file exists at specified path and play it using mpg123
         if (type(filename) == type(None) or filename == ""): return
         self.play_mp3_native(filename)
 
