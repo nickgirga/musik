@@ -1,4 +1,7 @@
 # Musik
+
+# This project has been migrated to [GitLab](https://gitlab.com/nickgirga/musik)
+
 ### A simple GTK music sequencer designed with touch UI in mind first.
 
 This is meant for simply having fun and jamming out on a mobile Linux device. It was designed for use with the PinePhone on Phosh, but it should be easy to adapt for any platform. Feel free to fork :)
